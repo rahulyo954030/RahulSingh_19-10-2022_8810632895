@@ -18,8 +18,8 @@ post : "http://localhost:8080/blog"
 
 ```
 
-<!-- ![screenshot](./Assets/post.PNG) -->
-<img src="./Assets/post.PNG"/>
+
+<img src="https://i.ibb.co/55bx6Rs/post.png"/>
 <br/>
 
 <h3>Step 3: Get blogs with pagination (5 Blogs per page).</h3>
@@ -28,7 +28,7 @@ post : "http://localhost:8080/blog"
 get : "http://localhost:8080/blog"
 
 ```
-![screenshot](./Assets/getwithpagination.PNG)
+<img src="https://i.ibb.co/qxT8vty/getwithpagination.png"/>
 <br/>
 
 <h3>Step 4: Get a blog with return array those words who starts with "A" or "a".</h3>
@@ -38,7 +38,7 @@ get : "http://localhost:8080/blog:postId"
 
 ```
 
-![screenshot](./Assets/getwithidwithreturnarray.PNG)
+<img src="https://i.ibb.co/zhsstKv/getwithidwithreturnarray.png"/>
 <br/>
 
 <h3>Step 5: Update last 3 letters for those words who starts with "A" or "a".</h3>
@@ -47,11 +47,12 @@ get : "http://localhost:8080/blog:postId"
 patch : "http://localhost:8080/blog:id"
 
 ```
-![screenshot](./Assets/update.PNG)
+<img src="https://i.ibb.co/D8wV76w/update.png"/>
 
 
-## For any query you can reach out to me Thankyou,
 
-## Rahul Singh 
-## rahulyo954030@gmail.com
+<h3>For any query you can reach out to me and thankyou.</h3>
+<h3>Rahul Singh </h3>
+<h3>rahulyo954030@gmail.com</h3>
+
 
