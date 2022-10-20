@@ -25,7 +25,7 @@ post : "http://localhost:8080/blog"
 <h3>Step 3: Get blogs with pagination (5 Blogs per page).</h3>
 
 ```javascript
-get : "http://localhost:8080/blog"
+get : "http://localhost:8080/blog?page=1"
 
 ```
 <img src="https://i.ibb.co/qxT8vty/getwithpagination.png"/>
