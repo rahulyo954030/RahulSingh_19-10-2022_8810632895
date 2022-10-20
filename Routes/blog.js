@@ -43,9 +43,11 @@ blogRouter.get("/:postId", async (req, res) => {
 blogRouter.patch("/:id", async (req, res) => {
   const postId = req.params.id;
   const Blog = await blog.findOne({ _id: postId });
-
+  const words = Blog.body
+  .split(" ")
+  .filter((element) => element[0] === "a" || element[0] === "A");
   // change last 3 characters to "*"
-  const words = Blog.body.split(" ").map((element) => {
+  const replacedWord = Blog.body.split(" ").map((element) => {
     if (element[0] === "a" || element[0] === "A") {
       let char = element.split("");
       (char[char.length - 1] = "*"), (char[char.length - 2] = "*"), (char[char.length - 3] = "*");
@@ -55,13 +57,13 @@ blogRouter.patch("/:id", async (req, res) => {
     }
   });
 
-  const updatedWords = words.join(" ");
+  const updatedWords = replacedWord.join(" ");
   const updatedBlog = await blog.findOneAndUpdate(
     { _id: postId },
     { body: updatedWords },
     { new: true }
   );
-  return res.status(200).send({ updatedBlog });
+  return res.status(200).send({ updatedBlog,words});
 });
 
 module.exports = blogRouter;

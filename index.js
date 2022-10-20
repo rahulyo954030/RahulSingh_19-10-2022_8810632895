@@ -12,10 +12,11 @@ app.get("/", (req,res)=>{
     res.send("Welcome to home page")
 })
 
-app.listen(8080, async()=>{
+const PORT = process.env.PORT || 8080
+app.listen(PORT, async()=>{
     await connection
     if(connection){
         console.log("db connected")
     }
-    console.log("http://localhost:8080");
+    console.log(`http://localhost:${PORT}`);
 })
