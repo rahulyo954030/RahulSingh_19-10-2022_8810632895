@@ -41,7 +41,7 @@ get : "http://localhost:8080/blog:postId"
 <img src="https://i.ibb.co/zhsstKv/getwithidwithreturnarray.png"/>
 <br/>
 
-<h3>Step 5: Update last 3 letters for those words who starts with "A" or "a".</h3>
+<h3>Step 5: Update last 3 letters for those words who starts with "A" or "a" to "*".</h3>
 
 ```javascript
 patch : "http://localhost:8080/blog:id"
