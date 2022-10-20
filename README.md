@@ -18,7 +18,8 @@ post : "http://localhost:8080/blog"
 
 ```
 
-![screenshot](./Assets/post.PNG)
+<!-- ![screenshot](./Assets/post.PNG) -->
+<img src="./Assets/post.PNG"/>
 <br/>
 
 <h3>Step 3: Get blogs with pagination (5 Blogs per page).</h3>
