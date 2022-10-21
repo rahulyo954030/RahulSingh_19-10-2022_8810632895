@@ -42,7 +42,7 @@ get : "http://localhost:8080/blog?page=1"
 <h3>Step 5: Get a blog with return array those words who starts with "A" or "a".</h3>
 
 ```javascript
-get : "http://localhost:8080/blog:postId"
+get : "http://localhost:8080/blog/:postId"
 
 ```
 
@@ -52,7 +52,7 @@ get : "http://localhost:8080/blog:postId"
 <h3>Step 6: Update last 3 letters for those words who starts with "A" or "a" to "*".</h3>
 
 ```javascript
-patch : "http://localhost:8080/blog:id"
+patch : "http://localhost:8080/blog/:id"
 
 ```
 <img src="https://i.ibb.co/D8wV76w/update.png"/>
